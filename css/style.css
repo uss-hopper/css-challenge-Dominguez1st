@@ -138,6 +138,7 @@ img[src~="images/stunning.jpg"]{
 	height: auto;
 	border: white solid .25em;
 	float: left;
+	margin-right: 1.5em;
 }
 span{
 	font-weight: bold;
@@ -203,4 +204,5 @@ button {
 footer {
 	background-color: black;
 	color: white;
+	text-align: center;
 }
