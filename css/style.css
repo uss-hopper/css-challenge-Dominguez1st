@@ -5,9 +5,12 @@
 * Some rules have been included here to give you a head start.
 * Create your own custom CSS rules below. Have fun!
 ******************************************************/
+
+
 html, body {
 	margin: 0;
 	box-sizing: border-box;
+	font-family: monospace;
 }
 
 .container {
@@ -61,6 +64,143 @@ body { width: 100%;}
 * * Pseudo Classes
 * * Attribute Selectors
 ******************************************************/
+@font-face {
+	font-family: 'libmono';
+	src: url('fonts/liberationmono-regular') format('truetype');
+}
+body {
+	background-color: #333333;
+	font-family: "libmono";
+}
+section{
+	padding: 2em;
+}
+
+/* ---HEADER--- */
+header{
+	font-size: 1.5em;
+	color: #00ff00;
+	/*uses body background color*/
+}
+header > div {
+	display: flex;
+}
+em {
+	margin: auto;
+	text-align: center;
+	font-size: .75em;
+}
 
 
+/*---INSTRUCTIONS PANEL---*/
+header + section{
+	background-color: #ffffff;
+}
 
+
+/* ---WELCOME IMAGE--- */
+img[src~="images/welcome.gif"] {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+.instructions-wrapper {
+	justify-content: space-between;
+	border: 5px solid black;
+	padding: 4em;
+	display: flex;
+}
+img[src~="images/captain-janeway.png"]{
+	width: 25%;
+	height: auto;
+}
+
+
+/* ---ABOUT ME--- */
+.about-me + div{
+	display: flex;
+}
+.container > h2{
+	text-align: right;
+}
+.about-me h2{
+	text-align: left;
+
+}
+.about-me {
+	background-color: #0000ff;
+}
+.form-wrapper {
+	background-color: #006400;
+}
+img[src~="images/stunning.jpg"]{
+	width: 35%;
+	height: auto;
+	border: white solid .25em;
+	float: left;
+}
+span{
+	font-weight: bold;
+	color:yellow ;
+}
+
+
+/* ---PROFESSIONAL SKILLZ--- */
+.about-me + section{
+	background-color: #ffffff;
+}
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	background-color: #333333;
+	color: #00ff00;
+	width: 100%;
+}
+table, td, th {
+	border: 1px solid white;
+	padding: .5em;
+	text-align: left;
+}
+.about-me{
+	color: white;
+}
+
+
+/* ---CONTACT FORM--- */
+.form-wrapper{
+	color: lime;
+	display: block;
+	padding: 1em;
+}
+section:nth-child(5){
+	display: flex;
+	flex-direction:  column;
+	justify-content: flex-start;
+}
+input {
+	width: 19em;
+}
+label{
+	display: block;
+}
+form > div{
+	padding-top: .75em;
+}
+button {
+	background-color: lime;
+	color: black;
+	border: none;
+	font-family: libmono;
+	font-weight: bold;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+
+/* ---FOOTER--- */
+footer {
+	background-color: black;
+	color: white;
+}
